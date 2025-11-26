@@ -59,11 +59,11 @@ body{
 /* Price button */
 .button{
     background-color:#2ecc71;
-    text-align:center;
-    width:97%;           /* Better width than 100% */
+    text-align:center;        /* Better width than 100% */
     margin: 15px auto;     /* center button */
     font-family:Arial;
     font-weight:bold;
     padding:10px;
     border-radius:5px;
+	width:200px
 }
