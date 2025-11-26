@@ -46,15 +46,15 @@ body{
     padding-left:20px;
 }
 
-/* Author name → Cypress needs rgb(119,119,119) */
-.name{
-    color: rgb(119, 119, 119);   /* FIXED */
-    font-family:Arial;
-    font-size:12px;  
+.name {
+    color: rgb(119, 119, 119) !important;  /* force correct color */
+    font-family: Arial;
+    font-size: 12px;  
     margin-top: -8px;
-    text-align:left;
-    padding-left:20px;
+    text-align: left;
+    padding-left: 20px;
 }
+
 
 /* Price button → Cypress needs div background + color + radius */
 .button{
