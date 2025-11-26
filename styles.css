@@ -58,7 +58,7 @@ body{
 
 /* Price button */
 .button{
-    background-color:#2ecc71;
+    background-color:rgb(46, 204, 113);
     text-align:center;        /* Better width than 100% */
     margin: 15px auto;     /* center button */
     font-family:Arial;
