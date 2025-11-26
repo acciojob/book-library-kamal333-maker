@@ -9,7 +9,7 @@ body{
 }
 
 .book-library{
-    background-color: #ffffff;   /* FIXED */
+    background-color: #ffffff;
     width:80%;
     padding:5px;
     margin:30px auto;
@@ -20,11 +20,11 @@ body{
     width: 100%;
     margin: 30px 0;
     border-bottom: 2px solid white;
-	background-color:#f8f8f8/* separator line */
+    background-color:#f8f8f8;
 }
 
 .book:last-child {
-    border-bottom: none;  /* no line after last book */
+    border-bottom: none;
 }
 
 /* Center image */
@@ -33,7 +33,7 @@ body{
     display: block;
     margin: 0 auto; 
     border-radius: 5px;
-	padding:20px;
+    padding:20px;
 }
 
 /* Title */
@@ -42,29 +42,30 @@ body{
     font-weight:bold;
     font-size:20px;
     margin-top: 15px;
-	text-align:left;
-	padding-left:20px;
+    text-align:left;
+    padding-left:20px;
 }
 
-/* Author name */
+/* Author name → Cypress needs rgb(119,119,119) */
 .name{
-    color:#777777;
+    color: rgb(119, 119, 119);   /* FIXED */
     font-family:Arial;
     font-size:12px;  
     margin-top: -8px;
-	text-align:left;
-	padding-left:20px;
+    text-align:left;
+    padding-left:20px;
 }
 
-/* Price button */
+/* Price button → Cypress needs div background + color + radius */
 .button{
-    background-color:#2ecc71;
-    text-align:center;        /* Better width than 100% */
-    margin: 15px auto;     /* center button */
+    background-color: rgb(46, 204, 113);  /* FIXED */
+    color: rgb(255, 255, 255);            /* FIXED */
+    border-radius: 5px;                   /* Already correct */
+    
+    text-align:center;
+    margin: 15px auto;
     font-family:Arial;
     font-weight:bold;
     padding:10px;
-    border-radius:5px;
-	width:200px;
-	color:white;
+    width:200px;
 }
