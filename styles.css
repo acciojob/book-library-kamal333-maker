@@ -60,7 +60,7 @@ body{
 .button{
     background-color:#2ecc71;
     text-align:center;
-    width:100%;           /* Better width than 100% */
+    width:97%;           /* Better width than 100% */
     margin: 15px auto;     /* center button */
     font-family:Arial;
     font-weight:bold;
