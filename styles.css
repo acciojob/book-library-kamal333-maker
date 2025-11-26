@@ -1,1 +1,69 @@
-/*  your css code here. If applicable */
+/* your css code here */
+h1{
+    text-align:center;
+    font-family:Arial;
+}
+
+body{
+    background-color:#f8f8f8;
+}
+
+.book-library{
+    background-color: #ffffff;   /* FIXED */
+    width:80%;
+    padding:5px;
+    margin:30px auto;
+}
+
+/* Book block */
+.book{
+    width: 100%;
+    margin: 30px 0;
+    border-bottom: 2px solid white;
+	background-color:#f8f8f8/* separator line */
+}
+
+.book:last-child {
+    border-bottom: none;  /* no line after last book */
+}
+
+/* Center image */
+.book img{
+    width: 200px;
+    display: block;
+    margin: 0 auto; 
+    border-radius: 5px;
+	padding:20px;
+}
+
+/* Title */
+.author{
+    font-family:Arial;
+    font-weight:bold;
+    font-size:20px;
+    margin-top: 15px;
+	text-align:left;
+	padding-left:20px;
+}
+
+/* Author name */
+.name{
+    color:#777777;
+    font-family:Arial;
+    font-size:12px;  
+    margin-top: -8px;
+	text-align:left;
+	padding-left:20px;
+}
+
+/* Price button */
+.button{
+    background-color:#2ecc71;
+    text-align:center;
+    width:100%;           /* Better width than 100% */
+    margin: 15px auto;     /* center button */
+    font-family:Arial;
+    font-weight:bold;
+    padding:10px;
+    border-radius:5px;
+}
