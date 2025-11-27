@@ -1,7 +1,10 @@
 body {
     background: #f8f8f8;
     font-family: Arial, sans-serif;
-    padding: 40px;
+}
+
+h1 {
+    text-align: center;        /* REQUIRED */
 }
 
 .book-library {
@@ -9,6 +12,7 @@ body {
     padding: 20px;
     display: flex;
     gap: 20px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.2);   /* REQUIRED */
 }
 
 .book {
@@ -16,22 +20,20 @@ body {
     padding: 10px;
     background: #fafafa;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* THIS IS THE ONLY DIV INSIDE .book (required by Cypress) */
+/* ONLY DIV INSIDE .book (as required) */
 .price {
-    background-color: rgb(46, 204, 113); /* required */
-    color: rgb(255, 255, 255);           /* required */
-    border-radius: 5px;                  /* required */
+    background-color: rgb(46, 204, 113); /* EXACT */
+    color: rgb(255, 255, 255);           /* EXACT */
+    border-radius: 5px;                  /* REQUIRED */
     padding: 8px 0;
     text-align: center;
     margin-bottom: 10px;
 }
 
-/* Author color required */
 .book p {
-    color: rgb(119, 119, 119);
+    color: rgb(119, 119, 119);  /* EXACT */
 }
 
 .book img {
