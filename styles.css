@@ -1,52 +1,40 @@
 body {
-    background-color: #f8f8f8; /* required */
+    background: #f8f8f8;
     font-family: Arial, sans-serif;
-    margin: 0;
     padding: 40px;
 }
 
-/* Library container */
 .book-library {
-    background-color: #ffffff; /* required */
+    background: #ffffff;
     padding: 20px;
     display: flex;
-    justify-content: space-between;
     gap: 20px;
-    border-radius: 8px;
 }
 
-/* Each book block */
 .book {
     width: 30%;
+    padding: 10px;
     background: #fafafa;
-    padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* FIRST DIV inside .book (required by Cypress) */
-.book .price {
-    background-color: rgb(46, 204, 113); /* REQUIRED */
-    color: rgb(255, 255, 255);           /* REQUIRED */
+/* THIS IS THE ONLY DIV INSIDE .book (required by Cypress) */
+.price {
+    background-color: rgb(46, 204, 113); /* required */
+    color: rgb(255, 255, 255);           /* required */
+    border-radius: 5px;                  /* required */
     padding: 8px 0;
-    border-radius: 5px;                  /* REQUIRED */
-    font-weight: bold;
     text-align: center;
-    margin-bottom: 12px;
-}
-
-.details img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-.title {
-    margin: 10px 0 5px;
-    font-size: 20px;
-}
-
-/* Author color (required) */
-.author {
-    color: rgb(119, 119, 119); /* REQUIRED */
     margin-bottom: 10px;
+}
+
+/* Author color required */
+.book p {
+    color: rgb(119, 119, 119);
+}
+
+.book img {
+    width: 100%;
+    border-radius: 6px;
 }
