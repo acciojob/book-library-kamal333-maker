@@ -1,71 +1,50 @@
-/* your css code here */
-h1{
-    text-align:center;
-    font-family:Arial;
+body {
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px;
 }
 
-body{
-    background-color:#f8f8f8;
-}
-
-.book-library{
+/* Library container */
+.book-library {
     background-color: #ffffff;
-    width:80%;
-    padding:5px;
-    margin:30px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    border-radius: 8px;
 }
 
-/* Book block */
-.book{
+/* Each book block */
+.book {
+    width: 30%;
+    background: #fafafa;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.book img {
     width: 100%;
-    margin: 30px 0;
-    border-bottom: 2px solid white;
-    background-color:#f8f8f8;
+    height: auto;
+    border-radius: 8px;
 }
 
-.book:last-child {
-    border-bottom: none;
+.book .title {
+    margin: 10px 0 5px;
+    font-size: 20px;
 }
 
-/* Center image */
-.book img{
-    width: 200px;
-    display: block;
-    margin: 0 auto; 
+.book .author {
+    color: #777777;   /* Required author color */
+    margin-bottom: 10px;
+}
+
+.book .price {
+    background-color: #2ecc71; /* Required price block color */
+    color: white;
+    padding: 8px 0;
     border-radius: 5px;
-    padding:20px;
-}
-
-/* Title */
-.author{
-    font-family:Arial;
-    font-weight:bold;
-    font-size:20px;
-    margin-top: 15px;
-    text-align:left;
-    padding-left:20px;
-}
-
-.name {
-    color: rgb(119, 119, 119) !important;  /* force correct color */
-    font-family: Arial;
-    font-size: 12px;  
-    margin-top: -8px;
-    text-align: left;
-    padding-left: 20px;
-}
-
-
-/* Price button → Cypress needs div background + color + radius */
-.button{
-    background-color: rgb(46, 204, 113);  /* FIXED */
-    color: rgb(255, 255, 255);            /* FIXED */
-    border-radius: 5px;                   /* Already correct */
-    
-    text-align:center;
-    margin: 15px auto;
-    font-family:Arial;
-    font-weight:bold;
-    padding:10px;
-    width:200px;
+    font-weight: bold;
 }
