@@ -43,7 +43,7 @@ body{
 
 .Price-block{
 	background-color:#2ecc71;
-	margin-bottom:20px;
+	margin:20px auto;
 	border:none;
 	padding:10px;
 	width:90%;
