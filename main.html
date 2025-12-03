@@ -1,10 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Library</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Library</title>
+
+<style>
+body{
+	background-color:#f8f8f8;	
+}
+.heading{
+	font-family:sans-serif;
+	text-align:center;
+}
+.book-library{
+	background-color:#ffffff;
+	padding:0;
+	margin:auto;
+	display:flex;
+	flex-direction:column;
+}
+
+.book{
+	font-family:sans-serif;
+	text-align:center;
+	border-bottom:10px solid lightgray;
+}
+
+.book-title{
+	padding-left:10px;
+	margin:0;
+	font-size:20px;
+	text-align:left;
+}
+
+.book img{
+	padding:20px;
+	display:block;
+	margin:auto;
+}
+
+.author{
+	padding-left:10px;
+	text-align:left;
+	font-size:15px;
+	color:#777777;
+}
+
+/* This is the one Cypress tests */
+.price-block{
+	background-color:#2ecc71;     /* REQUIRED */
+	color:#ffffff;                /* REQUIRED */
+	border-radius:5px;            /* REQUIRED */
+	padding:10px;
+	width:90%;
+	margin:20px auto;
+}
+</style>
+
 </head>
 <body>
 	
@@ -12,24 +65,28 @@
 		<div class="heading">
 			<h1>Book Library</h1>
 		</div>
+
 		<div class="book">
 			<img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Spy-in-the-Amber-by-Manohar-Malgonkar.jpg">
-			<h2 class="book-title">Spy in the Amber</h1>
+			<h2 class="book-title">Spy in the Amber</h2>
 			<p class="author">By Manohar Malgonkar</p>
 			<div class="price-block">RS.299</div>
 		</div>
+
 		<div class="book">
 			<img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Sacred-Games-by-Vikram-Chandra.jpg">
-			<h2 class="book-title">Sacred Games</h1>
-			<p class="author">by Vikram Chandra</p>
+			<h2 class="book-title">Sacred Games</h2>
+			<p class="author">By Vikram Chandra</p>
 			<div class="price-block">RS.199</div>
 		</div>
+
 		<div class="book">
 			<img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Byomkesh-Bakshi-by-Sharadindu-Bandyopadhyay.jpg">
-			<h2 class="book-title">Byomkesh Bakshi</h1>
+			<h2 class="book-title">Byomkesh Bakshi</h2>
 			<p class="author">By Sharadindu Bandyopadhyay</p>
 			<div class="price-block">RS.249</div>
 		</div>
 	</div>
+
 </body>
 </html>
