@@ -34,14 +34,14 @@ body{
 	margin:0px auto;
 }
 
-.Author{
+.author{
 	padding-left:10px;
 	text-align:left;
 	font-size:15px;
 	color:#777777;
 }
 
-.Price-block{
+.price-block{
 	background-color:#2ecc71;
 	margin:20px auto;
 	border:none;
@@ -50,6 +50,6 @@ body{
 	color:whitesmoke;
 }
 
-.Price-block:hover{
+.price-block:hover{
 	color:black;
 }
